@@ -1,6 +1,5 @@
 /**
  * Union Find
- * O()
  * @param {number} n Number of starting sets
  */
 export const UnionFind = (n) => {

@@ -4,44 +4,18 @@
   "description": "Useful algorithms in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test './algos/**/*.test.js'",
+    "test:watch": "node --test --watch './algos/**/*.test.js'"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "vitest": "^3.0.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enderer/algos.git"
   },
-  "dependencies": {
-    "assertion-error": "^2.0.1",
-    "cac": "^6.7.14",
-    "chai": "^5.1.2",
-    "check-error": "^2.1.1",
-    "debug": "^4.4.0",
-    "deep-eql": "^5.0.2",
-    "es-module-lexer": "^1.6.0",
-    "esbuild": "^0.24.2",
-    "estree-walker": "^3.0.3",
-    "expect-type": "^1.1.0",
-    "loupe": "^3.1.3",
-    "magic-string": "^0.30.17",
-    "ms": "^2.1.3",
-    "nanoid": "^3.3.8",
-    "pathe": "^2.0.2",
-    "pathval": "^2.0.0",
-    "picocolors": "^1.1.1",
-    "postcss": "^8.5.1",
-    "rollup": "^4.32.1",
-    "siginfo": "^2.0.0",
-    "source-map-js": "^1.2.1",
-    "stackback": "^0.0.2",
-    "std-env": "^3.8.0",
-    "tinybench": "^2.9.0",
-    "tinyexec": "^0.3.2",
-    "tinypool": "^1.0.2",
-    "tinyrainbow": "^2.0.0",
-    "tinyspy": "^3.0.2",
-    "vite": "^6.0.11",
-    "vite-node": "^3.0.4",
-    "why-is-node-running": "^2.3.0"
-  }
+  "bugs": {
+    "url": "https://github.com/Enderer/algos/issues"
+  },
+  "homepage": "https://github.com/Enderer/algos#readme",
+  "type": "module"
 }
