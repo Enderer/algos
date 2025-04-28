@@ -3,11 +3,11 @@
  * @param {number[]} nums
  */
 export const SegmentTree = (nums) => {
-    const nodes = new Array();
+    const nodes = new Array(4 * nums.length);
     init(nums, nodes, 0, 0, nums.length - 1);
-    return { 
+    return {
         query: (l, r) => query(nodes, l, r, 0),
-        update: (n, v) => update(nodes, n, v) 
+        update: (n, v) => update(nodes, n, v)
     };
 }
 
@@ -28,11 +28,11 @@ const query = (nodes, l, r, i) => {
     if (node.l === l && node.r === r) {
         return node.sum;
     }
-    if (r <= node.m) { 
+    if (r <= node.m) {
         return query(nodes, l, r, leftChild(i));
     }
-    if (l > node.m) { 
-        return query(nodes, l, r, rightChild(i)); 
+    if (l > node.m) {
+        return query(nodes, l, r, rightChild(i));
     }
     const leftSum = query(nodes, l, node.m, leftChild(i));
     const rightSum = query(nodes, node.m + 1, r, rightChild(i));

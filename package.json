@@ -4,8 +4,8 @@
   "description": "Useful algorithms in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "node --test './algos/**/*.test.js'",
-    "test:watch": "node --test --watch './algos/**/*.test.js'"
+    "test": "node --test ./algos/**/*.test.js",
+    "test:watch": "node --test --watch "
   },
   "author": "",
   "license": "ISC",
