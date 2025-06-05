@@ -27,7 +27,6 @@ export function * getBits(count, seed) {
     seed >>>= 1;
     seed |= t << 4;
     yield seed & 1;
-    console.log(seed, 'seed')
   }
 }
 
