@@ -15,4 +15,5 @@ Useful algorithms in JavaScript
 
 ## Trees
 
+- [Post Order Traversal](/algos/post-order.js)
 - [Segment Tree](/algos/segment-tree.js)
