@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node --test ./algos/**/*.test.js",
-    "test:watch": "node --test --watch "
+    "test:watch": "node --test --watch ./algos/**/*.test.js"
   },
   "author": "Stephen Marsh",
   "license": "ISC",

@@ -8,6 +8,7 @@ Useful algorithms in JavaScript
 ## Graph
 
 - [Union Find](/algos/union-find.js)
+- [Topological Sort (DFS)](/algos/topsort-dfs.js)
 
 ## RNG
 
@@ -17,3 +18,9 @@ Useful algorithms in JavaScript
 
 - [Post Order Traversal](/algos/post-order.js)
 - [Segment Tree](/algos/segment-tree.js)
+
+## Development
+
+- Install deps: `npm install`
+- Run tests: `npm test`
+- Watch tests: `npm run test:watch`
