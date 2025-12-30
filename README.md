@@ -16,10 +16,11 @@ Useful algorithms in JavaScript
 
 ## Trees
 
+- [Heap](/algos/heap.js)
 - [Post Order Traversal](/algos/post-order.js)
 - [Segment Tree](/algos/segment-tree.js)
 
-## Development
+# Development
 
 - Install deps: `npm install`
 - Run tests: `npm test`
