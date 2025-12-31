@@ -1,8 +1,37 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { init } from "./heap.js";
+import { Heap, init } from "./heap.js";
 
-describe("heapify", () => {
+describe("Heap", () => {
+
+  it("builds a heap and dequeues all items", () => {
+    const heap = Heap();
+    heap.enqueue(5);
+    heap.enqueue(4);
+    heap.enqueue(3);
+    heap.enqueue(2);
+    heap.enqueue(1);
+    assert.equal(heap.size(), 5);
+    assert.equal(heap.dequeue(), 1);
+    assert.equal(heap.dequeue(), 2);
+    assert.equal(heap.dequeue(), 3);
+    assert.equal(heap.dequeue(), 4);
+    assert.equal(heap.dequeue(), 5);
+    assert.equal(heap.size(), 0);
+  });
+
+  it("Inits a heap and dequeues all items", () => {
+    const heap = Heap([5, 4, 3, 2, 1]);
+    assert.equal(heap.dequeue(), 1);
+    assert.equal(heap.dequeue(), 2);
+    assert.equal(heap.dequeue(), 3);
+    assert.equal(heap.dequeue(), 4);
+    assert.equal(heap.dequeue(), 5);
+    assert.equal(heap.size(), 0);
+  });
+});
+
+describe("init", () => {
 
 	it("builds a min-heap for the whole array in one pass", () => {
 		const arr = [3, 9, 8, 4, 5, 7, 6];
