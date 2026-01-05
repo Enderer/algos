@@ -20,6 +20,11 @@ Useful algorithms in JavaScript
 - [Post Order Traversal](/algos/post-order.js)
 - [Segment Tree](/algos/segment-tree.js)
 
+## Sort
+
+- [Quick Select](/algos/quick-select.js)
+
+
 # Development
 
 - Install deps: `npm install`
