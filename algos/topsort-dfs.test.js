@@ -76,6 +76,16 @@ describe("topsort-dfs", () => {
 		assert.deepEqual(topsortDFS(n, edges), [0, 1, 2]);
 	});
 
+	it("produces a stable order even with duplicate edges across components", () => {
+		const n = 6;
+		const edges = [
+			[0, 1], [0, 1],
+			[2, 3], [2, 3],
+			[4, 5], [4, 5],
+		];
+		assert.deepEqual(topsortDFS(n, edges), [0, 1, 2, 3, 4, 5]);
+	});
+
 	it("does not rely on node id ordering", () => {
 		const n = 5;
 		const edges = [
