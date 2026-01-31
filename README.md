@@ -2,32 +2,28 @@
 Useful algorithms in JavaScript
 
 ## String Search
-
 - [Rabin Karp](/algos/rabin-karp.js)
 
 ## Graph
-
 - [Union Find](/algos/union-find.js)
 - [Topological Sort (DFS)](/algos/topsort-dfs.js)
+
+## Shortest Path
 - [Dijkstra's Shortest Path](/algos/dijkstras.js)
+- [Floyd Warshall](/algos/floyd-warshall.js)
 
 ## RNG
-
 - [Linear Feedback Shift Register](/algos/lfsr.js)
 
 ## Trees
-
 - [Heap](/algos/heap.js)
 - [Post Order Traversal](/algos/post-order.js)
 - [Segment Tree](/algos/segment-tree.js)
 
 ## Sort
-
 - [Quick Select](/algos/quick-select.js)
 
-
 # Development
-
 - Install deps: `npm install`
 - Run tests: `npm test`
 - Watch tests: `npm run test:watch`
@@ -42,7 +38,6 @@ Useful algorithms in JavaScript
 - Quick Sort
 - Aho Corasick
 - QuickSort, MergeSort, HeapSort, Insertion Sort, Selection Sort
-- Knapsack
 - Longest Common Subsequence
 - Longest Common Substring
 - KMP
@@ -57,7 +52,6 @@ Useful algorithms in JavaScript
 - RNG
 - Graph Coloring
 - Tarjans Lowest Common Ancestor
-- Floyd-Warshall, shortest path, weighted directed
 - Knapsack
 - Knights Tour
 - Red / Black Trees
