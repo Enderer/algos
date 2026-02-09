@@ -42,11 +42,11 @@ describe('postOrder', () => {
   });
 
   it('yields nodes in post-order for right-skewed tree', () => {
-    //   a
+    //     a
+    //    /
+    //   b
     //  /
-    // b
-    ///
-    //c
+    // c
     const c = createNode('c');
     const b = createNode('b', c, null);
     const a = createNode('a', b, null);
